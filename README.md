@@ -6,7 +6,7 @@ Find and learn counties flags,language,neighborhood.
 
 - JavaScript
 - React
-- Redux
+- Redux Toolkit
 - React Hooks
 - React Router v6
 - Redux Thunk
