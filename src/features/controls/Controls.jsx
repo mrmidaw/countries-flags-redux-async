@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectRegion } from '../store/controls/controls-selector';
-import { setRegion } from '../store/controls/controls-actions';
+import { selectRegion } from './controls-slice';
+import { setRegion } from './controls-slice';
 
 import { Search } from './Search';
 import { CustomSelect } from './CustomSelect';
@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 
 export const Controls = () => {
   const dispatch = useDispatch();
-  const region = useSelector(selectRegion);
+  const region = useSelector((state) => state.controls.region);
 
   const handleSelect = (reg) => {
     dispatch(setRegion(reg?.value || ''))

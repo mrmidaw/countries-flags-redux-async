@@ -1,7 +1,7 @@
 import { ThemeSwitcher } from '../features/theme/ThemeSwitcher';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { clearControls } from '../store/controls/controls-actions';
+import { clearControls } from '../features/controls/controls-slice';
 import styled from 'styled-components';
 import { Container } from './Container';
 
